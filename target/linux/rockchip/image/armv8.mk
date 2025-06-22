@@ -418,6 +418,17 @@ define Device/radxa_zero-3w
 endef
 TARGET_DEVICES += radxa_zero-3w
 
+define Device/rongpin_king3399
+  DEVICE_VENDOR := Rongpin
+  DEVICE_MODEL := King3399
+  SOC := rk3399
+  UBOOT_DEVICE_NAME := rp-king3399-rk3399
+  BOOT_FLOW := pine64-bin
+  DEVICE_PACKAGES := kmod-r8168 kmod-brcmfmac wpad-openssl \
+	brcmfmac-firmware-4356-sdio brcmfmac-nvram-4356-sdio
+endef
+TARGET_DEVICES += rongpin_king3399
+
 define Device/sinovoip_bpi-r2-pro
   DEVICE_VENDOR := Bananapi
   DEVICE_MODEL := BPi-R2 Pro

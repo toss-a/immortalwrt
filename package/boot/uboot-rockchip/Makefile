@@ -146,6 +146,13 @@ define U-Boot/nanopi-r4se-rk3399
     friendlyarm_nanopi-r4se
 endef
 
+define U-Boot/rp-king3399-rk3399
+  $(U-Boot/rk3399/Default)
+  NAME:=Rongpin King3399
+  BUILD_DEVICES:= \
+    rongpin_king3399
+endef
+
 define U-Boot/rock-4c-plus-rk3399
   $(U-Boot/rk3399/Default)
   NAME:=ROCK 4C+
@@ -403,6 +410,7 @@ UBOOT_TARGETS := \
   nanopc-t4-rk3399 \
   nanopi-r4s-rk3399 \
   nanopi-r4se-rk3399 \
+  rp-king3399-rk3399 \
   rock-4c-plus-rk3399 \
   rock-4se-rk3399 \
   rock-pi-4-rk3399 \
